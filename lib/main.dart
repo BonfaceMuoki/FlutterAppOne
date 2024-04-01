@@ -9,6 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: "Coding With Bonae", home: Dashboard());
+    return MaterialApp(
+      title: "Coding With Bonae",
+      themeMode: ThemeMode.system,
+      home: Dashboard(),
+    ); // make the app adopt the theme the phone is using
   }
 }
